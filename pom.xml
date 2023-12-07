@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.academia</groupId>
-	<artifactId>microservicio_grupos</artifactId>
+	<artifactId>microservicio_usuarios</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservicio_grupos</name>
+	<name>microservicio_usuarios</name>
 	<description>Curso spring boot</description>
 	<properties>
 		<java.version>17</java.version>
