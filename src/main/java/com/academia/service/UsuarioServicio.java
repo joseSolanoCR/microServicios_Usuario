@@ -6,22 +6,22 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.academia.model.Grupo;
-import com.academia.repository.GrupoRepositorio;
+import com.academia.model.Usuario;
+import com.academia.repository.UsuarioRepositorio;
 
 @Service
-public class GrupoServicio {
+public class UsuarioServicio {
 	@Autowired
-	private GrupoRepositorio repositorio;
+	private UsuarioRepositorio repositorio;
 	
 
-	public List<Grupo> listarGrupo(){
+	public List<Usuario> listarGrupo(){
 		return repositorio.findAll();
 		
 	}
 	
-	public Grupo obtenerGrupoById(Integer id){
-		Optional<Grupo> GrupoOptional = repositorio.findById(id);
+	public Usuario obtenerGrupoById(Integer id){
+		Optional<Usuario> GrupoOptional = repositorio.findById(id);
 		
 		if(GrupoOptional.isPresent()) {
 			return GrupoOptional.get();
@@ -31,14 +31,14 @@ public class GrupoServicio {
 		//return repositorio.findById(id).get();	
 	}
 	
-	//public void guardarGrupo(Grupo datosGrupo) {
+	//public void guardarGrupo(Usuario datosGrupo) {
 	//	repositorio.save(datosGrupo);
 	//}
-	public Grupo guardarGrupo(Grupo datosGrupo) {
+	public Usuario guardarGrupo(Usuario datosGrupo) {
 		return repositorio.save(datosGrupo);
 	}
 
-	public List<Grupo> obtenerGrupoByName(String descripcion){
+	public List<Usuario> obtenerGrupoByName(String descripcion){
 		return repositorio.findByNombreEquals(descripcion);
 	}
 	

@@ -6,18 +6,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Grupo {
+public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nombre;
 	
-	public Grupo() {
+	public Usuario() {
 		
 	}
 	
-	public Grupo(Integer id, String nombre) {
+	public Usuario(Integer id, String nombre) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
