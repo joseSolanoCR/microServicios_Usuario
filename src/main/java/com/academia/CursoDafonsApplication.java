@@ -8,7 +8,7 @@ public class CursoDafonsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CursoDafonsApplication.class, args);
-		System.out.println("Inicio de la aplicacion");
+		System.out.println("Inicio de la aplicacion :-)");
 	}
 
 }
